@@ -93,6 +93,9 @@ html {
 
 .learnmore {
     display: none;
+    margin-left: 15px;
+    margin-top: 10px;
+    color: rgb(5, 223, 231);
 }
 
 /* Specific styles for each animal */
@@ -107,6 +110,11 @@ html {
 
 .image-portal:hover .overlays {
     transform: translateY(-20px); 
+}
+
+.fa-solid{
+    margin-left: 7px;
+    margin-top: 3px;
 }
 
 /* Responsive styles */
