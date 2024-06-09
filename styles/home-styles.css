@@ -19,7 +19,7 @@ html {
 
 .container {
     display: flex;
-    gap: 0px; /* Adjust space between images */
+    gap: 0px; 
     padding: 80px;
     align-items: center;
     justify-content: center;
@@ -61,11 +61,11 @@ html {
     height: 100%;
     background: rgba(0, 0, 0, 0);
     transition: background 0.3s ease;
-    z-index: -1; /* Place it behind the text */
+    z-index: -1; 
 }
 
 .image-portal:hover .overlays::before {
-    background: rgba(0, 0, 0, 0.7); /* Black overlay on hover */
+    background: rgba(0, 0, 0, 0.7); 
 }
 
 .info {
@@ -98,7 +98,6 @@ html {
     color: rgb(5, 223, 231);
 }
 
-/* Specific styles for each animal */
 .fox-text, .whale-text, .baboon-text, .deer-text {
     margin-left: 15px;
 }
@@ -120,15 +119,19 @@ html {
 /* Responsive styles */
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         padding: 20px;
-        gap: 20px;
+        gap: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
     }
     .image-portal img {
-        width: 100%;
-        height: auto;
+        width: 120px;
+        height: 500px;
     }
     .info {
-        display: none; /* Remove text on smaller screens */
+        display: none; 
     }
 }
