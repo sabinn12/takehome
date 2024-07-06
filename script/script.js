@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         interaction.addEventListener("mouseover", function () {
             image.style.filter = "blur(10px)";
+            // overlays.style.transform = "translateY(-20px)";
             learnMore.style.display = "flex";
             
         });
